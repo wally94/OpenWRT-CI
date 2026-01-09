@@ -99,24 +99,4 @@ if [ -d *"luci-app-netspeedtest"* ]; then
 fi
 
 
-# 为 PPTP 添加 MPPE 加密选项
-PPTP_JS="../feeds/luci/modules/luci-base/htdocs/luci-static/resources/protocol/pptp.js"
-if [ -f "$PPTP_JS" ]; then
-	echo " "
 
-	# 防止重复插入
-	if ! grep -q "require_mppe" "$PPTP_JS"; then
-		sed -i "/o.password = true;/a\\
-\\
-\\to = s.taboption('general', form.Flag, 'require_mppe', _('Enable MPPE Encryption'), _('Encrypt PPTP connection using MPPE'));\\
-\\to.default = '1';\\
-\\to.rmempty = true;
-" "$PPTP_JS"
-
-		echo "pptp mppe option has been added!"
-	else
-		echo "pptp mppe option already exists, skip."
-	fi
-
-	cd $PKG_PATH
-fi

@@ -1,5 +1,5 @@
 #CI项目
-name: QCA-ALL
+name: LibWrt
 
 #CI计划
 on:

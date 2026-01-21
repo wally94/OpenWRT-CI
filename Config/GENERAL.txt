@@ -19,12 +19,11 @@ CONFIG_PACKAGE_luci-app-banip=y
 CONFIG_PACKAGE_luci-app-wechatpush
 CONFIG_PACKAGE_luci-app-ddns-go=y
 
-
-#删除插件
-#CONFIG_PACKAGE_luci-app-cpufreq=y
-#CONFIG_PACKAGE_luci-app-zerotier=n
-#CONFIG_PACKAGE_luci-app-vsftpd=n
-#CONFIG_PACKAGE_luci-app-appfilter=n
+# 删除插件
+# CONFIG_PACKAGE_luci-app-cpufreq=y
+# CONFIG_PACKAGE_luci-app-zerotier=n
+# CONFIG_PACKAGE_luci-app-vsftpd=n
+# CONFIG_PACKAGE_luci-app-appfilter=n
 CONFIG_PACKAGE_luci-app-gecoosac=n
 CONFIG_PACKAGE_luci-app-attendedsysupgrade=n
 CONFIG_PACKAGE_luci-app-wol=n

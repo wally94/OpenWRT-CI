@@ -17,10 +17,11 @@ CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_luci-app-wireguard=y
 CONFIG_PACKAGE_luci-app-banip=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
-CONFIG_PACKAGE_luci-app-cpufreq=y
+
 
 # 删除插件
 # CONFIG_PACKAGE_luci-app-netwizard=y 
+# CONFIG_PACKAGE_luci-app-cpufreq=y
 # CONFIG_PACKAGE_luci-app-zerotier=n
 # CONFIG_PACKAGE_luci-app-vsftpd=n
 # CONFIG_PACKAGE_luci-app-appfilter=n

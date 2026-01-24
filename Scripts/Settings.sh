@@ -65,6 +65,6 @@ if [[ "${WRT_TARGET^^}" == *"QUALCOMMAX"* ]]; then
 		find $DTS_PATH -type f ! -iname '*nowifi*' -exec sed -i 's/ipq\(6018\|8074\).dtsi/ipq\1-nowifi.dtsi/g' {} +
 		echo "qualcommax set up nowifi successfully!"
 	fi
-	echo "CONFIG_PACKAGE_luci-app-cpufreq=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-cpu-perf=y" >> ./.config
 	
 fi
